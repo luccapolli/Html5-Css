@@ -1,0 +1,83 @@
+/*
+#E9967A - BODY
+#F7FAD2 - RECEITAS
+#343A40 - HEADER NAV
+*/
+
+*{
+    margin: 0%;
+    overflow-y: auto;
+}
+
+body{
+    background-color: #E9967A;
+}
+
+header{
+    height: 50px;
+    background-color: #343A40;
+}
+
+header nav a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header nav{    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ul{
+    padding-top: 15px;
+    list-style: none;
+    width: 200px;
+    padding-left: 20px;
+}
+
+li{
+    display: inline;
+    padding-right: 10px;
+}
+
+main{
+    text-align: center;
+    margin: 200px;
+}
+
+h1{
+    padding: 10px;
+    font-size: 50px;
+}
+
+p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+footer{
+    max-height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;        
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+img{
+    display: flex;
+    height: 50px;
+}
