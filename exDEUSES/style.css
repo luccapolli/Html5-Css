@@ -1,0 +1,54 @@
+:root{
+    --cor1: #F5E7BB;
+    --cor2: #FAF8B2;
+    --cor3: #DED59E;
+    --cor4: #DEC89E;
+    --cor5: #FADAB2;
+}
+
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    background-color: var(--cor4);
+}
+
+header > h1{
+    text-align: center;
+}
+
+header > nav{
+    padding: 5px;
+}
+
+nav > a{
+    padding: 5px;
+}
+
+main{
+    box-shadow: 10px;
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
+    background-color: rgb(255, 254, 236);
+}
+
+p{
+    padding: 12px;
+}
+
+footer{
+    margin: auto;
+    max-width: 820px;
+    min-width: 320px;
+    text-align: center;
+    background-color: #c0b593;
+}
