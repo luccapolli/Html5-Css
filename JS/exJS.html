@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <h1>Por favor, insira algum nome abaixo:</h1>
+            <input type="text" name="text" id="texto">
+            <input type="button" value="inserir" onclick="calcular()">
+        <div id="saida">
+
+        </div>
+    </main>
+
+    <script>
+        function calcular(){
+            var nome = document.getElementById('texto') // puxa o nome do input
+            var resultado = document.getElementById('saida')
+            var pessoa = nome.value.toLowerCase() //joga em minusculo pra ajudar nos "if"
+            if (!isNaN(pessoa)){
+                resultado.innerHTML = "<br>cara, isso por algum acaso é um nome?"
+            }
+            else{
+                resultado.innerHTML = `<br>Olá, ${pessoa[0].toUpperCase() + pessoa.substring(1)}!` //msg e ainda transforma o nome da pessoa c a primeira letr maiuscula
+                if (pessoa == "lucca") {
+                resultado.innerHTML += "<br>Porque você ta inserindo o nome do meu criador?"
+                }
+                if (pessoa == "livia") {
+                resultado.innerHTML += "<br>hmm, esse é o nome da mulher mais linda do mundo"
+                }
+                if (pessoa == "lara") {
+                resultado.innerHTML += "<br>puts, tinha um nomezinho melhor não? kkkk brincadeira"
+                }
+                if (pessoa == "cris") {
+                resultado.innerHTML += "<br>ih, olha o nome da minha mãe ai"
+                }
+                if (pessoa == "cristiane") {
+                resultado.innerHTML += "<br>ih, olha o nome da minha mãe ai"
+                }
+                if (pessoa == "claudio") {
+                resultado.innerHTML += "<br>ih, olha o nome do meu pai ai"
+                }
+                if (pessoa == "gustavo") {
+                resultado.innerHTML += `<br>Todo ${pessoa} que eu conheço é viado, é sério.`
+                }
+                if (pessoa == "gg") {
+                resultado.innerHTML += "<br>GG não é apelido?"
+                }
+            }
+        }
+    </script>
+</body>
+</html>
