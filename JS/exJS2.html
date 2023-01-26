@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex02.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>VAI DAR NAMORO?</h1>
+    </header>
+    <section>
+        <div>
+            <p>Escreva dois nomes:</p>
+        </div>
+        <div>
+            <input type="text" name="pessoa1" id="p1"> +
+            <input type="text" name="pessoa2" id="p2">
+        </div>
+        <div>
+            <button id="botao" onclick="verificar()">VERIFICAR</button>
+            
+        </div>
+        <div id="result">
+            
+        </div>
+    </section>
+    <footer>
+        <a href="https://www.instagram.com/luccapolli_/?hl=pt-br">&copy; luccapolli</a>
+    </footer>
+    <script>
+        function verificar(){
+            var nome1 = document.getElementById('p1')
+            var nome2 = document.getElementById('p2')
+            var resultado = document.getElementById('result')
+            var pessoa1 = nome1.value.toLowerCase()
+            var pessoa2 = nome2.value.toLowerCase()
+            var num = Math.floor(Math.random() * 100);
+
+            
+            if (!isNaN(pessoa1) | !isNaN(pessoa2)){
+                resultado.innerHTML = "<br>pq q você digitou UM NúMERO <br>NO LUGAR DO NOME??"
+            } else{
+                resultado.innerHTML = `<br>${pessoa1[0].toUpperCase() + pessoa1.substring(1)} e ${pessoa2[0].toUpperCase() + pessoa2.substring(1)}
+                    <br> combinam <strong>${num}%</strong>`
+                if (pessoa1 == "lucca" && pessoa2 == "livia"){
+                    resultado.innerHTML = `<br>${pessoa1[0].toUpperCase() + pessoa1.substring(1)} e ${pessoa2[0].toUpperCase() + pessoa2.substring(1)}
+                    <br> combinam <strong>1000%</strong> porra`
+
+                }
+                if (pessoa1 == "livia" && pessoa2 == "lucca"){
+                    resultado.innerHTML = `<br>${pessoa1[0].toUpperCase() + pessoa1.substring(1)} e ${pessoa2[0].toUpperCase() + pessoa2.substring(1)}
+                    <br> combinam <strong>1000%</strong> porra`
+
+                }
+                if (pessoa1 == "lucca" && pessoa2 == "peralta"){
+                    resultado.innerHTML = "<br>KKKKKKKKKKK eu nao acredito<br>que você colocou isso"
+
+                }
+                if (pessoa1 == "peralta" && pessoa2 == "lucca"){
+                    resultado.innerHTML = "<br>KKKKKKKKKKK eu nao acredito<br>que você colocou isso"
+
+                }
+                if (pessoa1 == pessoa2){
+                    resultado.innerHTML = "<br>é sério que você<br>colocou o mesmo nome?"
+
+                }
+                if (pessoa1 == "gg" && pessoa2 == "ilca"){
+                    resultado.innerHTML = "<br>KKKKKKKKKKKKKK ALA O GADO"
+
+                }
+                if (pessoa1 == "ilca" && pessoa2 == "gg"){
+                    resultado.innerHTML = "<br>KKKKKKKKKKKKKK TA DE SACANAGEM?"
+
+                }
+                if (pessoa1 == "gustavo" && pessoa2 == "ilca"){
+                    resultado.innerHTML = "<br>KKKKKKKKKKKKKK É MUITO VIADO"
+
+                }
+                if (pessoa1 == "ilca" && pessoa2 == "gustavo"){
+                    resultado.innerHTML = "<br>KKKKKKKKKKKKKK OTARIOOOOOOO"
+
+                }
+        }
+    }
+    </script>
+</body>
+</html>

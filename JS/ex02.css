@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(170, 73, 73);
+    color: white;
+    font-size: 20px;
+}
+
+header{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+    text-align: center;
+}
+
+section{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.521);
+    height: 250px;
+    text-align: center;
+    border-radius: 12px;
+    width: 480px;
+    margin: auto;
+    color: black;
+    background-color: rgb(255, 235, 254);
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+}
+
+input{
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    font-size: 25px;
+    padding: 15px;
+}
+
+/*#pessoa1{
+
+}
+
+#pessoa2{
+    
+}*/
+
+#botao{
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    width: 100px;
+    padding: 7px;
+    color: white;
+    background-color: rgb(170, 73, 73);
+}
+
+#botao:hover{
+    box-shadow: inside 2px 2px 5px rgba(0, 0, 0, 0.253);
+    background-color: rgb(156, 67, 67);
+}
