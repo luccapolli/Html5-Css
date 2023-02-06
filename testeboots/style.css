@@ -1,0 +1,44 @@
+main{
+    background-color: #E9967A;
+    padding-top: 20px;
+}
+
+.form-row{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.form-group{
+    padding-left: 15px;
+}
+
+div{
+    max-width: 1300px;;
+}
+
+#teste{
+    margin-left: 20px;
+    width: 273px;
+}
+
+#uf{
+    text-align: center;
+    width: 115px;
+    margin-left: -37px;
+}
+
+.nav{
+    background-color: #343A40;
+    padding: 6px 5px 0px 5px;
+}
+
+a.active{
+    background-color: #E9967A;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 30px;
+}
