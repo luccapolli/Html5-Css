@@ -1,8 +1,70 @@
-main{
+/*     CSS Geral     */
+body{
     background-color: #E9967A;
+}
+
+main{
     padding-top: 20px;
 }
 
+nav{
+    align-items: center;
+}
+
+.nav{
+    background-color: #343A40;
+    padding: 6px 5px 0px 5px;
+}
+
+.active{
+    color: rgb(255, 255, 255);
+    border-radius: 6px 6px 0px 0px;
+    background-color: #E9967A;
+}
+
+footer{
+    max-height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;        
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+a{
+    color: rgb(168, 168, 168);
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*     Home          */
+.principal{
+    text-align: center;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home{
+    padding: 5px;
+    max-width: 55px;
+    min-width: 40px;
+}
+
+/*     Receitas      */
+.card-deck{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+  }
+
+/*     Cadastro      */
 .form-row{
     padding-left: 15px;
     padding-bottom: 15px;
@@ -12,11 +74,8 @@ main{
     padding-left: 15px;
 }
 
-div{
-    max-width: 1300px;;
-}
 
-#teste{
+#complemento{
     margin-left: 20px;
     width: 273px;
 }
@@ -25,20 +84,4 @@ div{
     text-align: center;
     width: 115px;
     margin-left: -37px;
-}
-
-.nav{
-    background-color: #343A40;
-    padding: 6px 5px 0px 5px;
-}
-
-a.active{
-    background-color: #E9967A;
-}
-
-footer{
-    text-align: center;
-    color: white;
-    background-color: black;
-    height: 30px;
 }
