@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Receitas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <style>
+    .container-fluid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0ad4e;
+    }
+    .pnlCatalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .card {
+      flex-basis: calc(25% - 10px);
+      margin: 5px;
+      width: 400px;
+      height: 600px;
+    }
+  </style>
+</head>
+<body onload="catalogo()">
+  <div class="container-fluid">
+    <div class="pnlCatalogo" id="pnlCatalogo">
+      <!-- aqui serão inseridos os painéis de receita -->
+    </div>
+  </div>
+
+  <script src="receitas.js"></script>
+  <script>
+    function ingredientes(receita) {
+      let lista = '<ul>' + receita.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).reduce((a, b) => a + b, '') + '</ul>';
+      return lista;
+    }
+
+    function getCard(receita) {
+      let card = `
+        <div class="card">
+          <img class="card-img-top" src="${receita.imagem}" alt="Imagem de ${receita.titulo}">
+          <div class="card-body">
+            <h5 class="card-title">${receita.titulo}</h5>
+            <div class="card-text">
+              ${ingredientes(receita)}
+              <hr>
+              <p>${receita.preparo}</p>
+            </div>
+          </div>
+        </div>
+      `;
+      return card;
+    }
+
+    function catalogo() {
+      let pnlCatalogo = document.getElementById("pnlCatalogo");
+      let catalogoHTML = receitas.map(receita => getCard(receita)).reduce((a, b) => a + b, '');
+      pnlCatalogo.innerHTML = catalogoHTML;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Números</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Contador Simples</h1>
+    </header>
+    <main>
+        <div>
+        <p>
+            <label for="num1">Insira um número: </label>
+            <input type="number" name="num1" id="num1">
+            <input type="button" value="inserir" onclick="inserir()">
+        </p>
+        </div>
+        <div>
+            <select id="lista" size="10"></select>
+            
+        </div>
+        <div id="saida"><input type="button" value="organizar" onclick="organizar()"></div>
+    </main>
+    <footer>
+        &copy; lucca
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

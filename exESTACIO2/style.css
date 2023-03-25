@@ -1,0 +1,50 @@
+main{
+    padding: 0px 10px;
+    width: 450px;
+    
+}
+
+#valor{
+    height: 30px;
+    width: 439px;
+    padding: 0px 0px 0px 10px;
+}
+
+.botao:hover{
+    background-color: #0c62e4;
+}
+
+.botao:active{
+    border-color: #c5c9cc;
+}
+
+.botao{
+    border-style: solid;
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 12px;
+    border-color: white;
+    margin: 10px 0px 10px 0px;
+}
+
+.barra{
+    border: 2px;
+    border-style: solid;
+    border-color: #e0e5e9;
+    border-radius: 4px;
+    height: 32px;
+    width: 450px;
+    font-size: 15px;
+    padding: 0px 8px;
+}
+
+label{
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
