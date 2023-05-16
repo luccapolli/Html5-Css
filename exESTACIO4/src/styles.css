@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+form {
+    padding: 15px;
+}
+  
+.form-control {
+    border-color: rgba(0, 0, 0, 0.336);
+    margin-bottom: 10px;
+}
+
+#btn-salvar{
+    margin-top: 10px;
+}
